@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses - তোমার প্রতিষ্ঠান</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+    .courses-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .course-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .course-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+    }
+    .course-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #34495e;
+    }
+    .course-info {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .course-footer {
+      font-size: 0.85rem;
+      color: #999;
+      border-top: 1px solid #eee;
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .course-card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>আমাদের কোর্সসমূহ</h1>
+  <div class="courses-container">
+
+    <div class="course-card">
+      <div class="course-title">ইংরেজি ভাষা শিক্ষা</div>
+      <div class="course-info">শিক্ষক: জনাব শফিকুর রহমান</div>
+      <div class="course-info">মেয়াদ: ৩ মাস</div>
+      <div class="course-info">ফি: ৫,০০০ টাকা</div>
+      <div class="course-footer">
+        <span>স্থান: ঢাকা</span>
+        <span>যোগাযোগ: ০১৭xxxxxxxx</span>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-title">কম্পিউটার বেসিক</div>
+      <div class="course-info">শিক্ষক: জনাব মাসুদ মেসবাহ</div>
+      <div class="course-info">মেয়াদ: ২ মাস</div>
+      <div class="course-info">ফি: ৪,০০০ টাকা</div>
+      <div class="course-footer">
+        <span>স্থান: মিরপুর</span>
+        <span>যোগাযোগ: ০১৮xxxxxxxx</span>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-title">ওয়েব ডেভেলপমেন্ট</div>
+      <div class="course-info">শিক্ষক: জনাব রহমান ভাই</div>
+      <div class="course-info">মেয়াদ: ৪ মাস</div>
+      <div class="course-info">ফি: ৮,০০০ টাকা</div>
+      <div class="course-footer">
+        <span>স্থান: গুলশান</span>
+        <span>যোগাযোগ: ০১৯xxxxxxxx</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
